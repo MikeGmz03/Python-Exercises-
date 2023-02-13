@@ -97,4 +97,46 @@ print (y)
 #<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
 
 
+# REGULAR EXPRESIONS  1 de un archivo, leer y almacenar todos los valores numéricos, convertirlos, sumarlos y mostrarlos.
+import re
+hand = open ('ACTUAL.txt') #Importar archivo
+numlist = list()
+#i=int(0)
+#a=0
+for line in hand: #recorre cada línea del archibo
+    line=line.rstrip() #separa cada línea
+    stuff = re.findall('[0-9]+', line) #busca los valores numéricos unicamente, los convierte en lista o vector
+    #print(stuff) #print de prueba para ver si la lista trae los valores correctos
+    for i in stuff: #RECORRE LA LISTA
+        num = int(i) #convierte cada valor en número entero
+        numlist.append(num) #cada valor lo agrega a una nuea lista numlist
+        #print (num)  ----- print de prueba para ver si almacena los números individuales
+print(sum(numlist)) #suma los números del vector, e imprime el resultad
+#_____________fin de programa________
+
+
+#MISMO PROGRAMA PERO EN UNA LÍNEA
+import re
+print(sum([int(i) for i in re.findall('[0-9]+',open('ACTUAL.txt').read())]))
+#_____________fin de programa________
+
+
+# Alternativa
+
+import re
+words = list()
+total = 0
+ #Transforms each line in a list of words
+for line in hand:
+    words = line.split()
+    #Check each word for one or more numbers
+    for word in words: 
+        if re.search('[0-9]+',word) : 
+        #If number, sum to the total
+            for i in re.findall('[0-9]+',word) : 
+                total = total + int(i)
+        else : continue
+print(total)
+#_____________fin de programa________
+
 
