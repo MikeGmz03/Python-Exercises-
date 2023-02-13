@@ -1,3 +1,6 @@
+#_____ Repositorio de ejercicios básicos de Python, uso de CONDICIONALES (if) y CICLOS (while)
+
+
 #Calcular el piso convertir un str en un float
 inp = input('Europe Floor?')
 usf = int(inp) + 1
