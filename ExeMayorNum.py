@@ -15,4 +15,4 @@ for the_num in [a, b, c, d, e, f]: #Loop y cadena de numeros
         larguest_so_far = the_num #Guardar el númeor calculado 
     print (larguest_so_far, the_num) # imprimir comparación
 
-print('After', larguest_so_far) #mostrar el mayor
+print('After', larguest_so_far) #mostrar el orden de los números mayor a menor
