@@ -1,4 +1,4 @@
-#_____ Repositorio de ejercicios básicos de Python, uso de CONDICIONALES (if) y CICLOS (while)
+#_____ Repositorio de ejercicios básicos de Python, uso de CONDICIONALES (if) y CICLOS (while)____
 
 
 #Calcular el piso convertir un str en un float
